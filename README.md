@@ -1,3 +1,8 @@
+2023, January 31
+
+1. Created GitHub repository
+2. Refactored and simplified codebase. Made everything a function.
+
 2023, January 9
 
 1. partitionbea.jl is accurate

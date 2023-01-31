@@ -1,9 +1,9 @@
 using GamsStructure
 
 
-function PartitionBEA(input_file = "data/nationalmodel_raw_data",output_dir = missing)
+function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = missing)
 
-    GU = load_universe(input_file)
+    GU = load_universe(input_dir)
     alias(GU,:i,:j)
 
 
@@ -81,7 +81,7 @@ function PartitionBEA(input_file = "data/nationalmodel_raw_data",output_dir = mi
     #end
 
 
-    
+
     GU[:y_0][:yr,IMRG] = 0*GU[:y_0][:yr,IMRG]
     GU[:a_0][:yr,IMRG] = 0*GU[:a_0][:yr,IMRG]
     GU[:tax_0][:yr,IMRG] = 0*GU[:tax_0][:yr,IMRG]
