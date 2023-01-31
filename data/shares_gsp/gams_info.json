@@ -1,0 +1,1 @@
+{"parm":{"labor_shr":[["yr","r","s"],"Share of regional value added due to labor",[1,2,3]],"region_shr":[["yr","r","s"],"Regional share of value added",[1,2,3]]},"scalar":{},"set":{"s":["BEA Goods and sectors categories",["i","j"]],"yr":["Years in WiNDC Database",[]],"r":["Regions in WiNDC Database",[]]}}
