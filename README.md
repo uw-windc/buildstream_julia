@@ -1,3 +1,7 @@
+2023, February 1
+
+1. gspshares is correct and verified to 8 decimals.
+
 2023, January 31
 
 1. Created GitHub repository
