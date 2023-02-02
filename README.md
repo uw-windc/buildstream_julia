@@ -1,7 +1,10 @@
 2023, February 1
 
-1. gspshares is correct and verified to 8 decimals.
+1. gspshares is correct and verified to 08 decimals
 2. pceshares is correct and verified to 15 decimals
+3. sgfshares is correct and verified to 15 decimals
+4. cfsshares is correct and verified to 15 decimals
+
 
 2023, January 31
 
