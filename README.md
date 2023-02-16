@@ -1,3 +1,12 @@
+2023, February 13
+
+This branch is using the most current data, years up to 2020. Everything below this line relates to older data.
+
+Currently, GAMS is giving an error on the Zero Profit condition in the calibration step of the national model. 
+
+1. PartitionBEA is correct and verified to 15 decimals.
+
+
 2023, February 1
 
 1. gspshares is correct and verified to 08 decimals

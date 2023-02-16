@@ -1,8 +1,8 @@
 using GamsStructure
 
 
-set_directory = "base_data_2017/set"
-parm_directory = "base_data_2017/parameter"
+set_directory = "base_data/set"
+parm_directory = "base_data/parameter"
 
 GU = GamsUniverse()
 
