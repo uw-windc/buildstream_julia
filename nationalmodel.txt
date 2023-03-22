@@ -2,7 +2,7 @@ Running year 2008
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B993.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2150.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -22,14 +22,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.141000
+Total Time. . . . . . . 0.172000
 Residual. . . . . . . . 3.021735e-12
 Postsolved residual: 3.0217e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_BC24.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_23D1.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -70,8 +70,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 1.125000
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.859000
 Residual. . . . . . . . 1.971161e-08
 
 
@@ -81,7 +81,7 @@ Running year 2009
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C2DC.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_28C4.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -108,7 +108,7 @@ Postsolved residual: 2.8412e-12
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C59C.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2AB9.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -149,8 +149,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 1.156000
+Basis Time. . . . . . . 0.015000
+Total Time. . . . . . . 0.766000
 Residual. . . . . . . . 3.789838e-08
 
 
@@ -160,7 +160,7 @@ Running year 2005
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_CDFA.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2F5E.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -180,14 +180,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.093000
+Total Time. . . . . . . 0.062000
 Residual. . . . . . . . 2.535954e-12
 Postsolved residual: 2.5360e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D07C.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3162.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -228,8 +228,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 1.047000
+Basis Time. . . . . . . 0.015000
+Total Time. . . . . . . 0.750000
 Residual. . . . . . . . 2.537579e-08
 
 
@@ -239,7 +239,7 @@ Running year 2006
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D714.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_35D8.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -259,14 +259,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.125000
+Total Time. . . . . . . 0.078000
 Residual. . . . . . . . 2.855242e-12
 Postsolved residual: 2.8552e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_DA13.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_383A.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -307,8 +307,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.046000
-Total Time. . . . . . . 1.015000
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 1.110000
 Residual. . . . . . . . 2.590204e-08
 
 
@@ -318,7 +318,7 @@ Running year 2012
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E04D.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3EB3.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -338,14 +338,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.109000
+Total Time. . . . . . . 0.079000
 Residual. . . . . . . . 3.270091e-12
 Postsolved residual: 3.2701e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E34C.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4154.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -386,8 +386,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.032000
-Total Time. . . . . . . 1.078000
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 1.032000
 Residual. . . . . . . . 1.991165e-08
 
 
@@ -397,7 +397,7 @@ Running year 2014
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E9D5.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4770.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -417,14 +417,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.094000
+Total Time. . . . . . . 0.063000
 Residual. . . . . . . . 3.663088e-12
 Postsolved residual: 3.6631e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_EC76.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4A4F.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -466,7 +466,7 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
 Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 1.125000
+Total Time. . . . . . . 1.000000
 Residual. . . . . . . . 1.988644e-08
 
 
@@ -476,7 +476,7 @@ Running year 2013
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_F31E.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_504B.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -496,14 +496,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.125000
 Residual. . . . . . . . 3.633127e-12
 Postsolved residual: 3.6331e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_F590.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_52DD.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -544,8 +544,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 1.078000
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 1.140000
 Residual. . . . . . . . 1.988702e-08
 
 
@@ -555,7 +555,7 @@ Running year 1999
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_FBDA.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5966.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -582,7 +582,7 @@ Postsolved residual: 1.9561e-12
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_FEC9.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5C06.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -623,8 +623,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.048000
-Total Time. . . . . . . 1.047000
+Basis Time. . . . . . . 0.061000
+Total Time. . . . . . . 1.157000
 Residual. . . . . . . . 3.178348e-08
 
 
@@ -634,7 +634,7 @@ Running year 2002
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_543.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6270.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -654,14 +654,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.109000
+Total Time. . . . . . . 0.125000
 Residual. . . . . . . . 1.989084e-12
 Postsolved residual: 1.9891e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_776.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6501.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -702,8 +702,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.030000
-Total Time. . . . . . . 1.094000
+Basis Time. . . . . . . 0.047000
+Total Time. . . . . . . 1.141000
 Residual. . . . . . . . 3.720781e-08
 
 
@@ -713,7 +713,7 @@ Running year 2017
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E2E.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6BD8.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -733,14 +733,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.094000
 Residual. . . . . . . . 3.634274e-12
 Postsolved residual: 3.6343e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_10BF.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6EA8.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -781,8 +781,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 1.062000
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 1.093000
 Residual. . . . . . . . 2.317868e-08
 
 
@@ -792,7 +792,7 @@ Running year 2016
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1758.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_74F2.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -812,14 +812,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.125000
 Residual. . . . . . . . 3.928600e-12
 Postsolved residual: 3.9286e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1A27.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_7793.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -860,8 +860,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.030000
-Total Time. . . . . . . 1.063000
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 1.157000
 Residual. . . . . . . . 3.490628e-08
 
 
@@ -871,7 +871,7 @@ Running year 2015
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_20B0.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_7E7A.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -891,14 +891,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.094000
 Residual. . . . . . . . 3.472529e-12
 Postsolved residual: 3.4725e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2303.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_80FC.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -939,8 +939,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.015000
-Total Time. . . . . . . 0.719000
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 1.125000
 Residual. . . . . . . . 2.338845e-08
 
 
@@ -950,7 +950,7 @@ Running year 1998
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_27B7.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_87F2.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -970,14 +970,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.063000
 Residual. . . . . . . . 1.536894e-12
 Postsolved residual: 1.5369e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2A0A.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_8A16.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1018,8 +1018,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.047000
-Total Time. . . . . . . 1.047000
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.718000
 Residual. . . . . . . . 2.639308e-08
 
 
@@ -1029,7 +1029,7 @@ Running year 2004
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2FD7.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_8EAB.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1049,14 +1049,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.094000
+Total Time. . . . . . . 0.046000
 Residual. . . . . . . . 2.230995e-12
 Postsolved residual: 2.2310e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_320B.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9003.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1097,8 +1097,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 0.922000
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.813000
 Residual. . . . . . . . 3.769745e-08
 
 
@@ -1108,7 +1108,7 @@ Running year 2000
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_37A9.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9506.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1128,14 +1128,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.125000
 Residual. . . . . . . . 1.845639e-12
 Postsolved residual: 1.8456e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_39BD.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_970A.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1176,8 +1176,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.032000
-Total Time. . . . . . . 0.985000
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 0.735000
 Residual. . . . . . . . 3.703632e-08
 
 
@@ -1187,7 +1187,7 @@ Running year 1997
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3FD9.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9B61.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1207,14 +1207,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.062000
+Total Time. . . . . . . 0.063000
 Residual. . . . . . . . 1.530848e-12
 Postsolved residual: 1.5308e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_421C.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9D56.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1242,8 +1242,8 @@ Crash Iterations. . . . 0
 Gradient Steps. . . . . 0
 Function Evaluations. . 14
 Gradient Evaluations. . 2
-Basis Time. . . . . . . 0.062000
-Total Time. . . . . . . 0.438000
+Basis Time. . . . . . . 0.047000
+Total Time. . . . . . . 0.328000
 Residual. . . . . . . . 0.000000e+00
 
 
@@ -1253,7 +1253,7 @@ Running year 2007
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_45B7.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A045.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1273,14 +1273,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
+Total Time. . . . . . . 0.062000
 Residual. . . . . . . . 2.990130e-12
 Postsolved residual: 2.9901e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4829.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A1EB.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1321,8 +1321,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 1.062000
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 0.719000
 Residual. . . . . . . . 1.974125e-08
 
 
@@ -1332,7 +1332,7 @@ Running year 2010
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4E93.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A5E4.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1352,14 +1352,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.047000
 Residual. . . . . . . . 3.177906e-12
 Postsolved residual: 3.1779e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_50F5.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A78B.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1401,7 +1401,7 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 1.016000
+Total Time. . . . . . . 0.703000
 Residual. . . . . . . . 1.972638e-08
 
 
@@ -1411,7 +1411,7 @@ Running year 2003
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_56F1.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_AC7E.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1431,14 +1431,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.063000
+Total Time. . . . . . . 0.140000
 Residual. . . . . . . . 2.132429e-12
 Postsolved residual: 2.1324e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5934.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_AF7C.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1479,8 +1479,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.953000
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 1.031000
 Residual. . . . . . . . 3.725399e-08
 
 
@@ -1490,7 +1490,7 @@ Running year 2011
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5E75.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B5B7.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1510,14 +1510,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.141000
 Residual. . . . . . . . 2.899291e-12
 Postsolved residual: 2.8993e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_60C8.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B867.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1558,8 +1558,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.969000
+Basis Time. . . . . . . 0.030000
+Total Time. . . . . . . 1.109000
 Residual. . . . . . . . 1.306300e-08
 
 
@@ -1569,7 +1569,7 @@ Running year 2001
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_66F3.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_BF00.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1589,14 +1589,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
+Total Time. . . . . . . 0.125000
 Residual. . . . . . . . 1.827937e-12
 Postsolved residual: 1.8279e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_68C9.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C191.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1637,8 +1637,8 @@ Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 0.984000
+Basis Time. . . . . . . 0.048000
+Total Time. . . . . . . 1.078000
 Residual. . . . . . . . 3.681133e-08
 
 
