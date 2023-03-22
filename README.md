@@ -1,11 +1,11 @@
 2023, February 13
 
-This branch is using the most current data, years up to 2020. Everything below this line relates to older data.
-
-Currently, GAMS is giving an error on the Zero Profit condition in the calibration step of the national model. 
+Currently, GAMS is giving an error on the Zero Profit condition (Only in Huber, I believe) in the calibration step of the national model. 
 
 1. PartitionBEA is correct and verified to 15 decimals.
 
+This branch is using the most current data, years up to 2020. Everything below this line relates to older data.
+---------------------------------------------------------------
 
 2023, February 1
 
