@@ -1,6 +1,7 @@
 using GamsStructure
 
 
+
 set_directory = "base_data/set"
 parm_directory = "base_data/parameter"
 
@@ -65,7 +66,7 @@ GU[:supply][:,:,:] = GU[:supply][:,:,:]*1e-3
 :x_0    , (:yr,:i),	    "Exports of goods and services"
 :mrg_0  , (:yr,:i),	    "Trade margins"
 :trn_0  , (:yr,:i),	    "Transportation costs"
-:cif0  , (:yr,:i),	    "CIF/FOB Adjustments on Imports"
+:cif0  ,  (:yr,:i),	    "CIF/FOB Adjustments on Imports"
 :duty_0 , (:yr,:i),	    "Import duties"
 :sbd_0  , (:yr,:i),	    "Subsidies on products"
 :tax_0  , (:yr,:i),	    "Taxes on products"
@@ -74,7 +75,7 @@ GU[:supply][:,:,:] = GU[:supply][:,:,:]*1e-3
 :s_0    , (:yr,:i),      "Aggegrate Supply"
 :d_0    , (:yr,:i),      "Sales in the domestic market"
 :a_0    , (:yr,:i),      "Armington supply"
-:bopdef, (:yr,),        "Balance of payments deficit"
+:bopdef,  (:yr,),        "Balance of payments deficit"
 :tm_0   , (:yr,:i),      "Tax net subsidy rate on intermediate demand"
 :ta_0   , (:yr,:i),      "Import tariff"
 end
