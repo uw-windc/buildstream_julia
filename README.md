@@ -5,6 +5,7 @@ Currently, GAMS is giving an error on the Zero Profit condition (Only in Huber, 
 1. PartitionBEA is correct and verified to 15 decimals.
 
 This branch is using the most current data, years up to 2020. Everything below this line relates to older data.
+
 ---------------------------------------------------------------
 
 2023, February 1
