@@ -4,7 +4,6 @@ using JuMP
 using Ipopt
 
 
-
 function calibrate(GU;output_dir = missing)
 
     calibrate_prepare!(GU)
@@ -95,21 +94,9 @@ function calibrate_prepare!(GU)
         :ty_values, (:yr,:j), "Output tax values"
     end)
 
-    #add_parameter(GU,:ty_values,
-    #            GamsParameter((:yr,:j),GU,description = "Output tax values")
-    #)
 
 
     GU[:ty_values][:yr,:j]  = GU[:va_0][:yr,[:othtax],:j]./sum(GU[:ys_0][:yr,:j,:i],dims = 3)
-
-    #begin
-    #    YR = GU[:yr]
-    #    J = [e for e in GU[:j]]
-    #
-    #    for yr∈YR,j∈J
-    #        GU[:ty_values][[yr],[j]]  = GU[:va_0][[yr],[:othtax],[j]]/sum(GU[:ys_0][[yr],[j],[i]] for i∈GU[:i])
-    #    end
-    #end
 
 
 
@@ -152,7 +139,7 @@ function calibrate_prepare!(GU)
     M = GU[:m]
 
     #for yr∈:yr,i∈I,j∈J
-    GU[:id_0][:yr,:i,:j] = GU[:id_0][:yr,:i,:j] .- permutedims(min.(0,GU[:ys_0][:yr,:j,:i]),(1,3,2))
+    GU[:id_0][:yr,:i,:j] = GU[:id_0][:yr,:i,:j] .- permutedims(min.(0,GU[:ys_0][:yr,:j,:i]),[1,3,2])
     #end
 
     GU[:ys_0][:yr,J,:i] = max.(0,GU[:ys_0][:yr,J,:i])

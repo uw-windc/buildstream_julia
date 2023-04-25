@@ -1,0 +1,180 @@
+\documentclass{amsart}
+
+
+
+\begin{document}
+
+\section{parameters}
+\begin{table}[h!]
+    \centering
+\begin{tabular}{ll}
+    y0[i]&Gross output\\ 
+ys0[j,i]&Sectoral supply\\ 
+ty0[j]&Output tax rate\\ 
+fs0[i]&Household supply\\ 
+id0[i,j]&Intermediate demand\\ 
+fd0[i,fd]&Final demand\\ 
+va0[va,j]&Vaue added\\ 
+ts0[ts,i]&Taxes and subsidies\\ 
+m0[i]&Imports\\ 
+x0[i]&Exports of goods and services\\ 
+mrg0[i]&Trade margins\\ 
+trn0[i]&Transportation costs\\ 
+duty0[i]&Import duties\\ 
+sbd0[i]&Subsidies on products\\ 
+tax0[i]&Taxes on products\\ 
+ms0[i,m]&Margin supply\\ 
+md0[m,i]&Margin demand\\ 
+s0[i]&Aggregate supply\\ 
+d0[i]&Sales in the domestic market\\ 
+a0[i]&Armington supply\\ 
+bopdef&Balance of payments deficit\\ 
+ta0[i]&Tax net subsidy rate on intermediate demand\\ 
+tm0[i]&Import tariff\\ 
+ty[j]&Output tax rate\\ 
+ta[i]&Tax net subsidy rate on intermediate demand\\ 
+tm[i]&Import tariff
+\end{tabular}
+\end{table}
+
+\section{Variables}
+\begin{table}[h!]
+\centering
+\begin{tabular}{ll}
+	Y[J]	&	Sectoral production\\
+	A[I]	&	Armington supply\\
+	MS[M]	&	Margin supply\\
+
+	PA[I]	&	Armington price\\
+	PY[I]	&	Supply\\
+	PVA[VA]	&	Value-added\\
+	PM[M]	&	Margin\\
+	PFX	&	Foreign exchnage\\
+
+	RA	&	Representative agent\\
+\end{tabular}
+\end{table}
+
+\newpage
+\section{Macros}
+
+$CVA[j=J]$
+\[
+\prod_{va\in VA}PVA[va]^{\theta_{va}[va,j]}
+\]
+
+$PMD[i=I]$
+\[
+\left(\theta_m[i]\cdot \left(\frac{PFX\cdot (1+tm[i])}{(1+tm0[i])}\right)^{1-2} + (1-\theta_m[i])\cdot PY[i]^{1-2}\right)^{1/(1-2)}
+\]
+
+$PXD[i=I]$
+\[
+\left(\theta_x[i]\cdot PFX^{1+2} + (1-\theta_x[i])\cdot \left(\frac{PA[i]\cdot (1-ta[i])}{(1-ta0[i])}\right)^{1+2}\right)^{1/(1+2)}
+\]
+
+$MD[i=I]$
+\[
+A[i]\cdot m0[i]\cdot \left( \frac{PMD[i]\cdot (1+tm0[i])}{PFX\cdot (1+tm[i])} \right)^2
+\]
+
+$YD[i=I]$
+\[
+A[i]\cdot y0[i]\cdot \left(\frac{PMD[i]}{PY[i]}\right)^2
+\]
+
+$XS[i=I]$
+\[
+A[i]\cdot x0[i]\cdot \left(\frac{PFX}{PXD[i]}\right)^2
+\]
+
+$DS[i = I]$
+\[
+A[i]\cdot a0[i]\cdot \left(\frac{PA[i]\cdot (1-ta[i])}{(PXD[i]\cdot (1-ta0[i]))}\right)^2
+\]
+
+\newpage
+
+\section{Market Clearance}
+
+
+
+$mkt\_py[i=I]$ -- Market clearance for supply price
+\begin{align*}
+    y0\_[i] = & \sum_{j\in J}ys0\_[j,i] + fs0\_[i] - \sum_{m\in M}ms0\_[i,m] \\ 
+    A[i]\cdot y0[i]\cdot \left(\frac{PMD[i]}{PY[i]}\right)^2 =&  \sum_{j\in  Y\_} Y[j]\cdot ys0[j,i] - \sum_{m\in M}MS[m]\cdot ms0[i,m] 
+\end{align*}
+
+\vspace{1cm}
+
+$mkt\_pa[i=I]$ -- Market clearance for Armington price
+\begin{align*}
+    a0\_[i] =& \sum_{j\in J}id0\_[i,j] + \sum_{fd\in FD}(fd0\_[i,fd]) \\
+    A[i]\cdot a0[i]\cdot \left(\frac{PA[i]\cdot (1-ta[i])}{PXD[i]\cdot(1-ta0[i])}\right)^2 =& \frac{\theta_c[i]\cdot  RA}{PA[i]}  
++ \sum_{j\in Y\_}Y[j]\cdot id0[i,j] + \sum_{xfd\in XFD}fd0[i,xfd]
+\end{align*}
+
+\vspace{1cm}
+
+$mkt\_pm[m\_=M]$ -- Market clearance for margin
+\begin{align*}
+\sum_{i\in I}ms0\_[i,m\_] =& \sum_{i\in I}md0\_[m\_,i] \\
+\sum_{i\in I}MS[m\_]\cdot ms0[i,m\_] =& \sum_{i\in I\vert a0[i]\neq 0}A[i]\cdot md0[m\_,i]
+\end{align*}
+
+\vspace{1cm}
+
+$mkt\_pva[va]$ -- Market clearance for value-added
+\[
+    \sum_{j\in J}va0[va,j] =
+    + \sum_{j\in Y\_}Y[j]\cdot va0[va,j]\cdot \frac{CVA[j]}{PVA[va]}
+\]
+\vspace{1cm}
+$mkt\_pfx$ -- Market clearance for foreign exchange;
+\[
+    \sum_{i\in A\_}XS[i] + bopdef
+    = \sum_{i\in A\_}MD[i]
+\]
+\newpage
+
+\section{Zero Profit}
+$prf\_y[j=J],$ -- Zero profit for sectoral production
+\begin{align*}
+(1-ty0[j])\cdot \sum_{i\in I}ys0\_[j,i] =& \sum_{i\in  I}id0\_[i,j] + \sum_{va\in VA}va0\_[VA,j] \\
+(1-ty[j])\cdot \sum_{i\in I}PY[i]\cdot ys0[j,i] =& \sum_{i\in I}PA[i]\cdot id0[i,j]  +  CVA[j]\cdot \sum_{va\in VA}va0[va,j]
+\end{align*}
+
+\vspace{1cm}
+$prf\_a[i=I],$ -- Zero profit for Armington Supply
+\begin{align*}
+a0\_[i]\cdot (1-ta0[[i]]) + x0\_[i] =& y0\_[i] + m0\_[i]\cdot (1+tm0[[i]]) + \sum_{m\in M}md0\_[m,i] \\
+PXD[i] \cdot (a0[i]\cdot (1-ta0[i])+x0[i] ) = &
+PMD[i] \cdot  
+(y0[i] +(1+tm0[i])\cdot m0[i]) +
+\sum_{m\in M}PM[m]\cdot md0[m,i] 
+\end{align*}
+
+\vspace{1cm}
+
+$prf\_ms[m=M]$ -- Zero profit for margin supply
+\[
+    \sum_{i\in I}PY[i]\cdot ms0[i,m] =
+    PM[m]\cdot \sum_{i\in I}ms0[i,m_]
+\]
+
+\vspace{1cm}
+
+\section{Income Balance}
+
+$bal\_RA$ -- Income balance for representative agent
+\begin{align*}
+RA =& \sum_{i\in I}PY[i]\cdot fs0[i] \\
+&+ PFX\cdot bopdef\\
+&- \sum_{i\in I,xfd\in XFD}PA[i]\cdot fd0[i,xfd] \\
+&+  \sum_{va\in VA,j\in J}PVA[va]\cdot va0[va,j]\\
+&+ \sum_{i\in I}A[i]\cdot (a0[i]\cdot PA[i]\cdot ta[i] + PFX\cdot MD[i]\cdot tm[i]) \\
+&+ \sum_{j\in J}Y[j]\cdot \sum_{i\in I}(ys0[[j],[i]]\cdot PY[i])\cdot ty[j]
+\end{align*}
+
+
+\end{document}

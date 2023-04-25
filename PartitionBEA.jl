@@ -29,12 +29,11 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
 
 
     GU[:id_0][:yr,IR_USE,JC_USE] = GU[:use][:yr,IR_USE,JC_USE];
-
-    GU[:ys_0][:yr,JC_SUPPLY,IR_SUPPLY] = permutedims(GU[:supply][:yr,IR_SUPPLY,JC_SUPPLY],(1,3,2))
+    GU[:ys_0][:yr,JC_SUPPLY,IR_SUPPLY] = permutedims(GU[:supply][:yr,IR_SUPPLY,JC_SUPPLY],[1,3,2])
 
 
     # Treat negative inputs as outputs
-    GU[:ys_0][:yr,:j,:i] = GU[:ys_0][:yr,:j,:i] - min.(0,permutedims(GU[:id_0][:yr,:i,:j],(1,3,2)))
+    GU[:ys_0][:yr,:j,:i] = GU[:ys_0][:yr,:j,:i] - min.(0,permutedims(GU[:id_0][:yr,:i,:j],[1,3,2]))
 
     GU[:id_0][:yr,:i,:j]          = max.(0,GU[:id_0][:yr,:i,:j])
     GU[:fd_0][:yr,IR_USE,FD]    = GU[:use][:yr,IR_USE,FD]
@@ -76,7 +75,7 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     GU[:fs_0][:yr,:i] = -min.(0,GU[:fd_0][:yr,:i,[:pce]])
 
     #for yr∈GU[:yr],i∈GU[:i]
-    GU[:y_0][:yr,:i] = permutedims(sum(GU[:ys_0][:yr,:j,:i],dims=2),(1,3,2)) + GU[:fs_0][:yr,:i] - sum(GU[:ms_0][:yr,:i,:m],dims=3) 
+    GU[:y_0][:yr,:i] = permutedims(sum(GU[:ys_0][:yr,:j,:i],dims=2),[1,3,2]) + GU[:fs_0][:yr,:i] - sum(GU[:ms_0][:yr,:i,:m],dims=3) 
     GU[:a_0][:yr,:i] = sum(GU[:fd_0][:yr,:i,FD],dims=3) + sum(GU[:id_0][:yr,:i,:j],dims=3)
     #end
 
@@ -108,7 +107,6 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     return GU
 
 end
-
 
 
 function partitionBEA_interm(GU::GamsUniverse)
@@ -193,7 +191,7 @@ function partitionBEA_valueadded(GU::GamsUniverse)
 
     #for yr∈YR,j∈J
     parm[:yr,J,[:use]] = G[:use][:yr,[:valueadded],J]
-    parm[:yr,J,[:va0_ts0]] = permutedims(sum(G[:va_0][:yr,:va,J],dims=2),(1,3,2)) + ts0[:yr,[:taxes],J] - ts0[:yr,[:subsidies],J]
+    parm[:yr,J,[:va0_ts0]] = permutedims(sum(G[:va_0][:yr,:va,J],dims=2),[1,3,2]) + ts0[:yr,[:taxes],J] - ts0[:yr,[:subsidies],J]
     parm[:yr,J,[:chk]] = parm[:yr,J,[:use]] - parm[:yr,J,[:va0_ts0]]
     #end
 
@@ -377,7 +375,7 @@ function partitionBEA_tsupply(GU::GamsUniverse)
 
     #for yr∈YR,i∈I
     parm[:yr,I,[:supply]] = G[:supply][:yr,I,[:Supply]]
-    parm[:yr,I,[:ys0]] = permutedims(sum(G[:ys_0][:yr,:j,I],dims=2),(1,3,2)) + G[:m_0][:yr,I] + G[:mrg_0][:yr,I] + 
+    parm[:yr,I,[:ys0]] = permutedims(sum(G[:ys_0][:yr,:j,I],dims=2),[1,3,2]) + G[:m_0][:yr,I] + G[:mrg_0][:yr,I] + 
                           G[:trn_0][:yr,I] + G[:duty_0][:yr,I] + G[:tax_0][:yr,I] - G[:sbd_0][:yr,I]
     parm[:yr,I,[:totaluse]] = sum(G[:id_0][:yr,I,:j],dims=3) + sum(G[:fd_0][:yr,I,:fd],dims=3) + G[:x_0][:yr,I]
     parm[:yr,I,[:chk]] = parm[:yr,I,[:supply]] - parm[:yr,I,[:totaluse]]
