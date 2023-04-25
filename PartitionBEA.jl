@@ -7,10 +7,32 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     alias(GU,:i,:j)
 
 
+    partitionBEA_extract_from_tables!(GU)
 
-    #:yr = GU[:yr]
-    #I = GU[:i]
-    #J = GU[:j]
+    partitionBEA_adjust_table_data!(GU)
+
+    partitionBEA_extract_parameters!(GU)
+
+    partitionBEA_zero_marginal_goods!(GU)
+
+
+    
+    #potentially more clear with for loops. Could eliminate with masking, probably.
+
+    partitionBEA_create_taxes!(GU)
+
+
+    if !(ismissing(output_dir))
+        unload(GU,output_dir)
+    end
+
+    return GU
+
+end
+
+
+function partitionBEA_extract_from_tables!(GU::GamsUniverse)
+
     IR_USE_ALL = GU[:ir_use]
     IR_USE = GU[:i][IR_USE_ALL]
     JC_USE_ALL = GU[:jc_use]
@@ -24,18 +46,10 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     VA = GU[:va][IR_USE_ALL]
     TS = GU[:ts][IR_USE_ALL]
 
-    IMRG = GU[:imrg]
-    #:m = GU[:m]
-
-
     GU[:id_0][:yr,IR_USE,JC_USE] = GU[:use][:yr,IR_USE,JC_USE];
     GU[:ys_0][:yr,JC_SUPPLY,IR_SUPPLY] = permutedims(GU[:supply][:yr,IR_SUPPLY,JC_SUPPLY],[1,3,2])
 
 
-    # Treat negative inputs as outputs
-    GU[:ys_0][:yr,:j,:i] = GU[:ys_0][:yr,:j,:i] - min.(0,permutedims(GU[:id_0][:yr,:i,:j],[1,3,2]))
-
-    GU[:id_0][:yr,:i,:j]          = max.(0,GU[:id_0][:yr,:i,:j])
     GU[:fd_0][:yr,IR_USE,FD]    = GU[:use][:yr,IR_USE,FD]
     GU[:va_0][:yr,VA,JC_USE]    = GU[:use][:yr,VA,JC_USE]
     GU[:ts_0][:yr,TS,JC_USE]    = GU[:use][:yr,TS,JC_USE]
@@ -51,6 +65,16 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     GU[:sbd_0][:yr,IR_SUPPLY]  = - GU[:supply][:yr,IR_SUPPLY,[:Subsidies]]
     GU[:x_0][:yr,IR_USE]       = GU[:use][:yr,IR_USE,[:exports]]
 
+
+end
+
+
+function partitionBEA_adjust_table_data!(GU::GamsUniverse)
+
+    # Treat negative inputs as outputs
+    GU[:ys_0][:yr,:j,:i] = GU[:ys_0][:yr,:j,:i] - min.(0,permutedims(GU[:id_0][:yr,:i,:j],[1,3,2]))
+    GU[:id_0][:yr,:i,:j]          = max.(0,GU[:id_0][:yr,:i,:j])
+
     #Adjust transport margins for transport sectors according to CIF/FOB
     #adjustments. Insurance imports are specified as net of adjustments.
 
@@ -60,12 +84,14 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     GU[:m_0][:yr,[:ins]] = GU[:m_0][:yr,[:ins]] .+ GU[:cif0][:yr,[:ins]]
     #GU[:cif0][:yr,i] .= 0
 
+end
+
+
+function partitionBEA_extract_parameters!(GU::GamsUniverse)
 
     GU[:y_0][:yr,:i] = sum(GU[:ys_0][:yr,:j,:i],dims = 2)
     
-    #for yr∈GU[:yr],j∈GU[:j]
     GU[:s_0][:yr,:j] = sum(GU[:ys_0][:yr,:i,:j],dims = 2)
-    #end
     GU[:ms_0][:yr,:i,[:trd]] = max.(-GU[:mrg_0][:yr,:i],0)
     GU[:ms_0][:yr,:i,[:trn]] = max.(-GU[:trn_0][:yr,:i],0) 
 
@@ -74,23 +100,31 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
 
     GU[:fs_0][:yr,:i] = -min.(0,GU[:fd_0][:yr,:i,[:pce]])
 
-    #for yr∈GU[:yr],i∈GU[:i]
     GU[:y_0][:yr,:i] = permutedims(sum(GU[:ys_0][:yr,:j,:i],dims=2),[1,3,2]) + GU[:fs_0][:yr,:i] - sum(GU[:ms_0][:yr,:i,:m],dims=3) 
+
+    JC_USE_ALL = GU[:jc_use]
+    FD = GU[:fd][JC_USE_ALL]
+
     GU[:a_0][:yr,:i] = sum(GU[:fd_0][:yr,:i,FD],dims=3) + sum(GU[:id_0][:yr,:i,:j],dims=3)
-    #end
 
 
+end
 
-    GU[:y_0][:yr,IMRG] = 0*GU[:y_0][:yr,IMRG]
-    GU[:a_0][:yr,IMRG] = 0*GU[:a_0][:yr,IMRG]
-    GU[:tax_0][:yr,IMRG] = 0*GU[:tax_0][:yr,IMRG]
-    GU[:sbd_0][:yr,IMRG] = 0*GU[:sbd_0][:yr,IMRG] 
-    GU[:x_0][:yr,IMRG] = 0*GU[:x_0][:yr,IMRG]
-    GU[:m_0][:yr,IMRG] = 0*GU[:m_0][:yr,IMRG]
-    GU[:md_0][:yr,:m,IMRG] = 0*GU[:md_0][:yr,:m,IMRG]
-    GU[:duty_0][:yr,IMRG] = 0*GU[:duty_0][:yr,IMRG]
-    
-    #potentially more clear with for loops. Could eliminate with masking, probably.
+
+function partitionBEA_zero_marginal_goods!(GU::GamsUniverse)
+
+    GU[:y_0][:yr,:imrg]      = 0*GU[:y_0][:yr,:imrg]
+    GU[:a_0][:yr,:imrg]      = 0*GU[:a_0][:yr,:imrg]
+    GU[:tax_0][:yr,:imrg]    = 0*GU[:tax_0][:yr,:imrg]
+    GU[:sbd_0][:yr,:imrg]    = 0*GU[:sbd_0][:yr,:imrg] 
+    GU[:x_0][:yr,:imrg]      = 0*GU[:x_0][:yr,:imrg]
+    GU[:m_0][:yr,:imrg]      = 0*GU[:m_0][:yr,:imrg]
+    GU[:md_0][:yr,:m,:imrg]  = 0*GU[:md_0][:yr,:m,:imrg]
+    GU[:duty_0][:yr,:imrg]   = 0*GU[:duty_0][:yr,:imrg]
+end
+
+
+function partitionBEA_create_taxes!(GU::GamsUniverse)
 
     for yr∈GU[:yr],i∈GU[:i]
         GU[:tm_0][[yr],[i]] = (GU[:duty_0]!=0 && GU[:m_0][[yr],[i]] > 0) ? GU[:duty_0][[yr],[i]]./GU[:m_0][[yr],[i]] : 0
@@ -99,15 +133,7 @@ function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = mi
     for yr∈GU[:yr],i∈GU[:i]
         GU[:ta_0][[yr],[i]] = GU[:a_0][[yr],[i]]!=0 ? (GU[:tax_0][[yr],[i]] - GU[:sbd_0][[yr],[i]])./GU[:a_0][[yr],[i]] : 0
     end
-
-    if !(ismissing(output_dir))
-        unload(GU,output_dir)
-    end
-
-    return GU
-
 end
-
 
 function partitionBEA_interm(GU::GamsUniverse)
     G = deepcopy(GU)
