@@ -73,7 +73,7 @@ function partitionBEA_adjust_table_data!(GU::GamsUniverse)
 
     # Treat negative inputs as outputs
     GU[:ys_0][:yr,:j,:i] = GU[:ys_0][:yr,:j,:i] - min.(0,permutedims(GU[:id_0][:yr,:i,:j],[1,3,2]))
-    GU[:id_0][:yr,:i,:j]          = max.(0,GU[:id_0][:yr,:i,:j])
+    GU[:id_0][:yr,:i,:j] = max.(0,GU[:id_0][:yr,:i,:j])
 
     #Adjust transport margins for transport sectors according to CIF/FOB
     #adjustments. Insurance imports are specified as net of adjustments.
