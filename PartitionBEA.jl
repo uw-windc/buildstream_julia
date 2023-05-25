@@ -1,7 +1,7 @@
 using GamsStructure
 
 
-function PartitionBEA(;input_dir = "data/nationalmodel_raw_data",output_dir = missing)
+function PartitionBEA(;input_dir = "data_2020/nationalmodel_raw_data",output_dir = missing)
 
     GU = load_universe(input_dir)
     alias(GU,:i,:j)
@@ -138,13 +138,13 @@ end
 function partitionBEA_interm(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, "use"
         id0, "id0"
         chk, ""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :interm, (:yr,:j,:tmp), "Total intermediate inputs (purchasers' prices)"
     end)
 
@@ -167,13 +167,13 @@ end
 function partitionBEA_basicva(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, ""
         va0, ""
         chk, ""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:j,:tmp), "Basic value added (purchasers' prices)"
     end)
 
@@ -197,13 +197,13 @@ end
 function partitionBEA_valueadded(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, ""
         va0_ts0, ""
         chk, ""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:j,:tmp), "Value added (purchaser's prices)"
     end)
 
@@ -228,14 +228,14 @@ end
 function partitionBEA_taxtotal(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         ts_subsidies, ""
         ts_taxes, ""
         s0, ""
         t0_duty, ""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:tmp), "Check on total taxes"
     end)
 
@@ -260,7 +260,7 @@ end
 function partitionBEA_output(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, ""
         id0_va0,""
         ys0,""
@@ -268,7 +268,7 @@ function partitionBEA_output(GU::GamsUniverse)
         chk_ys0,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:j,:tmp), "Total industry output (basic prices)"
     end)
 
@@ -296,13 +296,13 @@ end
 function partitionBEA_totint(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, ""
         id0,""
         chk,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:i,:tmp), "Total intermediate use (purchasers' prices)"
     end)
 
@@ -324,13 +324,13 @@ end
 function partitionBEA_totaluse(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         use, ""
         id0_fd0,""
         chk,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:i,:tmp), "Total use of commodities (purchasers' prices)"
     end)
 
@@ -353,13 +353,13 @@ end
 function partitionBEA_basicsupply(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         supply, ""
         ys0, ""
         chk, ""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:i,:tmp), "Basic supply"
     end)
 
@@ -381,7 +381,7 @@ end
 function partitionBEA_tsupply(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         supply, ""
         ys0, ""
         totaluse, ""
@@ -389,7 +389,7 @@ function partitionBEA_tsupply(GU::GamsUniverse)
         supply_use,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:i,:tmp), "Total supply"
     end)
 
@@ -416,7 +416,7 @@ function partitionBEA_details(GU::GamsUniverse)
 
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         y0, ""
         m0, ""
         mrg_trn,""
@@ -427,7 +427,7 @@ function partitionBEA_details(GU::GamsUniverse)
         balance,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:i,:tmp), "Check on accounting identities"
     end)
 
@@ -458,7 +458,7 @@ function partitionBEA_imrginfo(GU::GamsUniverse)
 
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         a0, ""
         tax0, ""
         sbd0,""
@@ -470,7 +470,7 @@ function partitionBEA_imrginfo(GU::GamsUniverse)
         trd,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :parm, (:yr,:tmp,:imrg),"Report of margin producing sectors"
     end)
 
