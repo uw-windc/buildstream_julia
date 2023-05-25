@@ -1,8 +1,8 @@
-Running year 2008
+Running year 1997
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_952F.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_74C.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -12,7 +12,7 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.0217e-12           I 0.0e+00 1.0e-12 (mkt_PA[ore])
+    0     0     1     1 3.2831e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -22,14 +22,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.125000
-Residual. . . . . . . . 3.021735e-12
-Postsolved residual: 3.0217e-12
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 3.283059e-12
+Postsolved residual: 3.2831e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_96C6.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_847.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -38,910 +38,28 @@ Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
 
 Crash Log
 major  func  diff  size  residual    step       prox   (label)
-    0     0             4.4011e+03             0.0e+00 (mkt_PA[hou])
-    1     1   187   293 2.7209e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+    0     0             2.3293e+03             0.0e+00 (mkt_PA[hou])
 pn_search terminated: no progress.
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 2.7209e+02           I 2.7e+00 2.7e+02 (mkt_PA[trn])
+    0     0    13     1 2.3293e+03           I 1.0e+01 1.4e+03 (mkt_PA[hou])
 
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
+Minor Iteration Log
+minor      t          z     w     v   art ckpts  enter    leave
+  500  2.1574e-01   282    10     0     0     9 z[    1] w[   57]
+    1     4    14     2 0.0000e+00  1.0e+00 RO 4.0e+00 0.0e+00 (prf_Y[agr])
 
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.4011e+03           R 1.0e-01 2.8e+03 (mkt_PA[hou])
-    1     1    47     4 3.6613e+02  1.0e+00 SO 4.0e-02 3.6e+02 (bal_RA)
-    2     1    48     5 1.2479e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
-    3     1    49     6 1.9774e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
-    4     1    50     7 5.0296e-06  1.0e+00 SO 2.0e-03 4.6e-06 (bal_RA)
-    5     1    51     8 1.9712e-08  1.0e+00 SO 5.0e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.032000
-Total Time. . . . . . . 0.703000
-Residual. . . . . . . . 1.971161e-08
-
-
-----------------------------------------------
-
-Running year 2009
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9AAF.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.8412e-12           I 0.0e+00 1.4e-12 (mkt_PM[trd])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
+Major Iterations. . . . 1
+Minor Iterations. . . . 584
 Restarts. . . . . . . . 0
 Crash Iterations. . . . 0
 Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.079000
-Residual. . . . . . . . 2.841153e-12
-Postsolved residual: 2.8412e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9BF9.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             4.4288e+03             0.0e+00 (mkt_PA[hou])
-    1     1   191   293 2.2034e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 2.2034e+02           I 2.2e+00 2.2e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.4288e+03           R 1.0e-01 2.8e+03 (mkt_PA[hou])
-    1     1    47     4 3.5694e+02  1.0e+00 SO 4.0e-02 3.5e+02 (bal_RA)
-    2     1    48     5 1.2220e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
-    3     1    49     6 1.9310e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
-    4     1    50     7 4.3587e-06  1.0e+00 SO 1.9e-03 3.8e-06 (bal_RA)
-    5     1    51     8 3.7898e-08  1.0e+00 SO 4.4e-07 2.7e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 70
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 0.656000
-Residual. . . . . . . . 3.789838e-08
-
-
-----------------------------------------------
-
-Running year 2005
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_9F93.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.5360e-12           I 0.0e+00 9.1e-13 (prf_Y[hou])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.079000
-Residual. . . . . . . . 2.535954e-12
-Postsolved residual: 2.5360e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A0DD.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             3.7776e+03             0.0e+00 (mkt_PA[hou])
-    1     1   190   293 1.6762e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.6762e+02           I 1.7e+00 1.7e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 3.7776e+03           R 1.0e-01 2.4e+03 (mkt_PA[hou])
-    1     1    47     4 3.1421e+02  1.0e+00 SO 4.0e-02 3.1e+02 (bal_RA)
-    2     1    48     5 1.0891e+01  1.0e+00 SO 1.6e-02 1.0e+01 (bal_RA)
-    3     1    49     6 1.7469e-02  1.0e+00 SO 6.4e-03 1.7e-02 (bal_RA)
-    4     1    50     7 3.8486e-06  1.0e+00 SO 1.7e-03 3.5e-06 (bal_RA)
-    5     1    51     8 2.5376e-08  1.0e+00 SO 3.8e-07 1.9e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 69
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.671000
-Residual. . . . . . . . 2.537579e-08
-
-
-----------------------------------------------
-
-Running year 2006
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A477.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.8552e-12           I 0.0e+00 1.2e-12 (mkt_PA[hou])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.079000
-Residual. . . . . . . . 2.855242e-12
-Postsolved residual: 2.8552e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A5B1.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             4.0177e+03             0.0e+00 (mkt_PA[hou])
-    1     1   187   293 1.7734e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.7734e+02           I 1.8e+00 1.7e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.0177e+03           R 1.0e-01 2.5e+03 (mkt_PA[hou])
-    1     1    47     4 3.3501e+02  1.0e+00 SO 4.0e-02 3.3e+02 (bal_RA)
-    2     1    48     5 1.1508e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
-    3     1    49     6 1.8375e-02  1.0e+00 SO 6.4e-03 1.8e-02 (bal_RA)
-    4     1    50     7 4.3542e-06  1.0e+00 SO 1.8e-03 4.0e-06 (bal_RA)
-    5     1    51     8 2.5902e-08  1.0e+00 SO 4.4e-07 1.9e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 77
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
+Function Evaluations. . 14
+Gradient Evaluations. . 2
 Basis Time. . . . . . . 0.031000
-Total Time. . . . . . . 0.656000
-Residual. . . . . . . . 2.590204e-08
-
-
-----------------------------------------------
-
-Running year 2012
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A93C.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.2701e-12           I 0.0e+00 1.3e-12 (mkt_PA[ore])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
-Residual. . . . . . . . 3.270091e-12
-Postsolved residual: 3.2701e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_AA76.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             4.9477e+03             0.0e+00 (mkt_PA[hou])
-    1     1   179   293 8.8129e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 8.8129e+02           I 8.8e+00 8.8e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.9477e+03           R 1.0e-01 3.1e+03 (mkt_PA[hou])
-    1     1    47     4 4.0786e+02  1.0e+00 SO 4.0e-02 4.0e+02 (bal_RA)
-    2     1    48     5 1.3660e+01  1.0e+00 SO 1.6e-02 1.3e+01 (bal_RA)
-    3     1    49     6 2.1700e-02  1.0e+00 SO 6.4e-03 2.1e-02 (bal_RA)
-    4     1    50     7 5.3305e-06  1.0e+00 SO 2.2e-03 4.2e-06 (bal_RA)
-    5     1    51     8 1.9912e-08  1.0e+00 SO 5.3e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 71
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 0.640000
-Residual. . . . . . . . 1.991165e-08
-
-
-----------------------------------------------
-
-Running year 2014
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_ADF1.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.6631e-12           I 0.0e+00 1.4e-12 (prf_Y[slg])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.078000
-Residual. . . . . . . . 3.663088e-12
-Postsolved residual: 3.6631e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_AF2B.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             5.3290e+03             0.0e+00 (mkt_PA[hou])
-    1     1   174   293 2.2162e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 2.2162e+03           I 9.0e+00 2.2e+03 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 5.3290e+03           R 1.0e-01 3.3e+03 (mkt_PA[hou])
-    1     1    47     4 4.4213e+02  1.0e+00 SO 4.0e-02 4.4e+02 (bal_RA)
-    2     1    48     5 1.4644e+01  1.0e+00 SO 1.6e-02 1.4e+01 (bal_RA)
-    3     1    49     6 2.3137e-02  1.0e+00 SO 6.4e-03 2.2e-02 (bal_RA)
-    4     1    50     7 6.8263e-06  1.0e+00 SO 2.3e-03 6.1e-06 (bal_RA)
-    5     1    51     8 1.9886e-08  1.0e+00 SO 6.8e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 69
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.610000
-Residual. . . . . . . . 1.988644e-08
-
-
-----------------------------------------------
-
-Running year 2013
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B297.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.6331e-12           I 0.0e+00 1.4e-12 (mkt_PFX)
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.062000
-Residual. . . . . . . . 3.633127e-12
-Postsolved residual: 3.6331e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B3C1.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             5.0886e+03             0.0e+00 (mkt_PA[hou])
-    1     1   177   293 1.2067e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.2067e+03           I 9.0e+00 1.2e+03 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 5.0886e+03           R 1.0e-01 3.2e+03 (mkt_PA[hou])
-    1     1    47     4 4.2149e+02  1.0e+00 SO 4.0e-02 4.2e+02 (bal_RA)
-    2     1    48     5 1.4023e+01  1.0e+00 SO 1.6e-02 1.3e+01 (bal_RA)
-    3     1    49     6 2.2240e-02  1.0e+00 SO 6.4e-03 2.1e-02 (bal_RA)
-    4     1    50     7 6.1370e-06  1.0e+00 SO 2.2e-03 5.4e-06 (bal_RA)
-    5     1    51     8 1.9887e-08  1.0e+00 SO 6.1e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.625000
-Residual. . . . . . . . 1.988702e-08
-
-
-----------------------------------------------
-
-Running year 1999
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B72D.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.9561e-12           I 0.0e+00 6.8e-13 (mkt_PM[trd])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 1.956072e-12
-Postsolved residual: 1.9561e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B866.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             2.6370e+03             0.0e+00 (mkt_PA[hou])
-    1     1   218   293 1.1726e+03  1.0e+00    1.0e+01 (mkt_PM[trd])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.1726e+03           I 9.0e+00 1.1e+03 (mkt_PM[trd])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 2.6370e+03           R 1.0e-01 1.6e+03 (mkt_PA[hou])
-    1     1    47     4 2.1274e+02  1.0e+00 SO 4.0e-02 2.1e+02 (bal_RA)
-    2     1    48     5 7.8040e+00  1.0e+00 SO 1.6e-02 7.3e+00 (bal_RA)
-    3     1    49     6 1.2630e-02  1.0e+00 SO 6.4e-03 1.2e-02 (bal_RA)
-    4     1    50     7 1.7538e-06  1.0e+00 SO 1.3e-03 1.5e-06 (bal_RA)
-    5     1    51     8 3.1783e-08  1.0e+00 SO 1.8e-07 2.3e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.032000
-Total Time. . . . . . . 0.594000
-Residual. . . . . . . . 3.178348e-08
-
-
-----------------------------------------------
-
-Running year 2002
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_BBC3.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.9891e-12           I 0.0e+00 9.1e-13 (prf_Y[slg])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.046000
-Residual. . . . . . . . 1.989084e-12
-Postsolved residual: 1.9891e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_BCFC.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             3.1483e+03             0.0e+00 (mkt_PA[hou])
-    1     1   202   293 2.3783e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 2.3783e+02           I 2.4e+00 2.4e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 3.1483e+03           R 1.0e-01 2.0e+03 (mkt_PA[hou])
-    1     1    47     4 2.5540e+02  1.0e+00 SO 4.0e-02 2.5e+02 (bal_RA)
-    2     1    48     5 9.0619e+00  1.0e+00 SO 1.6e-02 8.5e+00 (bal_RA)
-    3     1    49     6 1.4486e-02  1.0e+00 SO 6.4e-03 1.4e-02 (bal_RA)
-    4     1    50     7 2.2761e-06  1.0e+00 SO 1.4e-03 1.9e-06 (bal_RA)
-    5     1    51     8 3.7208e-08  1.0e+00 SO 2.3e-07 2.7e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 71
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 1.000000
-Residual. . . . . . . . 3.720781e-08
-
-
-----------------------------------------------
-
-Running year 2017
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C1CF.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.6343e-12           I 0.0e+00 1.3e-12 (mkt_PA[man])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 3.634274e-12
-Postsolved residual: 3.6343e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C2F9.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             6.1066e+03             0.0e+00 (mkt_PA[hou])
-    1     1   175   293 1.1741e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.1741e+03           I 9.0e+00 1.1e+03 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 6.1066e+03           R 1.0e-01 3.9e+03 (mkt_PA[hou])
-    1     1    47     4 4.9979e+02  1.0e+00 SO 4.0e-02 5.0e+02 (bal_RA)
-    2     1    48     5 1.6500e+01  1.0e+00 SO 1.6e-02 1.5e+01 (bal_RA)
-    3     1    49     6 2.5858e-02  1.0e+00 SO 6.4e-03 2.5e-02 (bal_RA)
-    4     1    50     7 8.5132e-06  1.0e+00 SO 2.6e-03 7.8e-06 (bal_RA)
-    5     1    51     8 2.3179e-08  1.0e+00 SO 8.5e-07 1.8e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.532000
-Residual. . . . . . . . 2.317868e-08
-
-
-----------------------------------------------
-
-Running year 2016
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C5E8.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.9286e-12           I 0.0e+00 2.0e-12 (mkt_PA[ore])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 3.928600e-12
-Postsolved residual: 3.9286e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_C703.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             5.8446e+03             0.0e+00 (mkt_PA[hou])
-    1     1   178   293 8.1025e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 8.1025e+02           I 8.1e+00 7.9e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 5.8446e+03           R 1.0e-01 3.8e+03 (mkt_PA[hou])
-    1     1    47     4 4.7811e+02  1.0e+00 SO 4.0e-02 4.7e+02 (bal_RA)
-    2     1    48     5 1.5868e+01  1.0e+00 SO 1.6e-02 1.5e+01 (bal_RA)
-    3     1    49     6 2.5018e-02  1.0e+00 SO 6.4e-03 2.4e-02 (bal_RA)
-    4     1    50     7 7.7303e-06  1.0e+00 SO 2.5e-03 7.0e-06 (bal_RA)
-    5     1    51     8 3.4906e-08  1.0e+00 SO 7.7e-07 2.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 0.531000
-Residual. . . . . . . . 3.490628e-08
-
-
-----------------------------------------------
-
-Running year 2015
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_CA01.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.4725e-12           I 0.0e+00 1.4e-12 (prf_Y[slg])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.063000
-Residual. . . . . . . . 3.472529e-12
-Postsolved residual: 3.4725e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_CB1B.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             5.5940e+03             0.0e+00 (mkt_PA[hou])
-    1     1   177   293 1.1485e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.1485e+03           I 9.0e+00 1.1e+03 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 5.5940e+03           R 1.0e-01 3.6e+03 (mkt_PA[hou])
-    1     1    47     4 4.6018e+02  1.0e+00 SO 4.0e-02 4.6e+02 (bal_RA)
-    2     1    48     5 1.5239e+01  1.0e+00 SO 1.6e-02 1.4e+01 (bal_RA)
-    3     1    49     6 2.4029e-02  1.0e+00 SO 6.4e-03 2.3e-02 (bal_RA)
-    4     1    50     7 7.3024e-06  1.0e+00 SO 2.4e-03 6.6e-06 (bal_RA)
-    5     1    51     8 2.3388e-08  1.0e+00 SO 7.3e-07 1.8e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 67
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.516000
-Residual. . . . . . . . 2.338845e-08
+Total Time. . . . . . . 0.235000
+Residual. . . . . . . . 0.000000e+00
 
 
 ----------------------------------------------
@@ -950,7 +68,7 @@ Running year 1998
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_CE1A.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_A0D.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -960,7 +78,7 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.5369e-12           I 0.0e+00 6.8e-13 (mkt_PM[trd])
+    0     0     1     1 2.7261e-12           I 0.0e+00 1.6e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -971,13 +89,13 @@ Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
 Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 1.536894e-12
-Postsolved residual: 1.5369e-12
+Residual. . . . . . . . 2.726085e-12
+Postsolved residual: 2.7261e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_CF34.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_B08.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1008,8 +126,8 @@ major minor  func  grad  residual    step  type prox    inorm  (label)
     1     1    47     4 1.9689e+02  1.0e+00 SO 4.0e-02 1.9e+02 (bal_RA)
     2     1    48     5 7.3236e+00  1.0e+00 SO 1.6e-02 6.9e+00 (bal_RA)
     3     1    49     6 1.1916e-02  1.0e+00 SO 6.4e-03 1.1e-02 (bal_RA)
-    4     1    50     7 1.5588e-06  1.0e+00 SO 1.2e-03 1.3e-06 (bal_RA)
-    5     1    51     8 2.6393e-08  1.0e+00 SO 1.6e-07 2.0e-08 (mkt_PFX)
+    4     1    50     7 1.5587e-06  1.0e+00 SO 1.2e-03 1.3e-06 (bal_RA)
+    5     1    51     8 2.6378e-08  1.0e+00 SO 1.6e-07 2.0e-08 (mkt_PFX)
 
 Major Iterations. . . . 5
 Minor Iterations. . . . 68
@@ -1019,17 +137,17 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.516000
-Residual. . . . . . . . 2.639308e-08
+Total Time. . . . . . . 0.641000
+Residual. . . . . . . . 2.637773e-08
 
 
 ----------------------------------------------
 
-Running year 2004
+Running year 1999
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D233.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E74.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1039,7 +157,7 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.2310e-12           I 0.0e+00 1.1e-12 (mkt_PY[con])
+    0     0     1     1 3.2304e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -1049,14 +167,14 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.062000
-Residual. . . . . . . . 2.230995e-12
-Postsolved residual: 2.2310e-12
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 3.230416e-12
+Postsolved residual: 3.2304e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D34D.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_F6F.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1065,41 +183,24 @@ Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
 
 Crash Log
 major  func  diff  size  residual    step       prox   (label)
-    0     0             3.5264e+03             0.0e+00 (mkt_PA[hou])
-    1     1   193   293 1.7416e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+    0     0             2.6372e+03             0.0e+00 (mkt_PA[hou])
 pn_search terminated: no progress.
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.7416e+02           I 1.7e+00 1.7e+02 (mkt_PA[trn])
+    0     0    13     1 2.6372e+03           I 1.0e+01 1.6e+03 (mkt_PA[hou])
+    1     4    14     2 0.0000e+00  1.0e+00 RO 4.0e+00 0.0e+00 (prf_Y[agr])
 
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 3.5264e+03           R 1.0e-01 2.2e+03 (mkt_PA[hou])
-    1     1    47     4 2.9183e+02  1.0e+00 SO 4.0e-02 2.9e+02 (bal_RA)
-    2     1    48     5 1.0171e+01  1.0e+00 SO 1.6e-02 9.5e+00 (bal_RA)
-    3     1    49     6 1.6152e-02  1.0e+00 SO 6.4e-03 1.6e-02 (bal_RA)
-    4     1    50     7 3.2084e-06  1.0e+00 SO 1.6e-03 2.9e-06 (bal_RA)
-    5     1    51     8 3.7697e-08  1.0e+00 SO 3.2e-07 2.7e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 68
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
+Major Iterations. . . . 1
+Minor Iterations. . . . 435
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
 Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.015000
-Total Time. . . . . . . 0.547000
-Residual. . . . . . . . 3.769745e-08
+Function Evaluations. . 14
+Gradient Evaluations. . 2
+Basis Time. . . . . . . 0.032000
+Total Time. . . . . . . 0.235000
+Residual. . . . . . . . 0.000000e+00
 
 
 ----------------------------------------------
@@ -1108,7 +209,7 @@ Running year 2000
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D65B.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1126.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1118,7 +219,7 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.8456e-12           I 0.0e+00 6.8e-13 (mkt_PM[trd])
+    0     0     1     1 2.9183e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -1129,13 +230,13 @@ Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
 Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 1.845639e-12
-Postsolved residual: 1.8456e-12
+Residual. . . . . . . . 2.918318e-12
+Postsolved residual: 2.9183e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_D785.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1221.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1144,13 +245,13 @@ Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
 
 Crash Log
 major  func  diff  size  residual    step       prox   (label)
-    0     0             2.8350e+03             0.0e+00 (mkt_PA[hou])
-    1     1   204   293 1.9183e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+    0     0             2.8354e+03             0.0e+00 (mkt_PA[hou])
+    1     1   204   293 1.9294e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
 pn_search terminated: no progress.
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.9183e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
+    0     0    14     2 1.9294e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
 
 Restart Log
 proximal_perturbation 0
@@ -1162,177 +263,32 @@ proximal_perturbation 1.0000e-01
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 2.8350e+03           R 1.0e-01 1.7e+03 (mkt_PA[hou])
-    1     1    47     4 2.3221e+02  1.0e+00 SO 4.0e-02 2.3e+02 (bal_RA)
-    2     1    48     5 8.3644e+00  1.0e+00 SO 1.6e-02 7.8e+00 (bal_RA)
-    3     1    49     6 1.3391e-02  1.0e+00 SO 6.4e-03 1.3e-02 (bal_RA)
-    4     1    50     7 2.4087e-06  1.0e+00 SO 1.3e-03 2.2e-06 (bal_RA)
-    5     1    51     8 3.7036e-08  1.0e+00 SO 2.4e-07 2.7e-08 (bal_RA)
+    0     0    46     3 2.8354e+03           R 1.0e-01 1.7e+03 (mkt_PA[hou])
+    1     1    47     4 2.3226e+02  1.0e+00 SO 4.0e-02 2.3e+02 (bal_RA)
+    2     1    48     5 8.3716e+00  1.0e+00 SO 1.6e-02 7.9e+00 (bal_RA)
+    3     1    49     6 1.3439e-02  1.0e+00 SO 6.4e-03 1.3e-02 (bal_RA)
+    4     1    50     7 2.4421e-06  1.0e+00 SO 1.3e-03 2.3e-06 (bal_RA)
+    5     1    51     8 3.7174e-08  1.0e+00 SO 2.4e-07 2.7e-08 (bal_RA)
 
 Major Iterations. . . . 5
-Minor Iterations. . . . 71
+Minor Iterations. . . . 68
 Restarts. . . . . . . . 1
 Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.015000
-Total Time. . . . . . . 0.547000
-Residual. . . . . . . . 3.703632e-08
-
-
-----------------------------------------------
-
-Running year 1997
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_DA84.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.5308e-12           I 0.0e+00 9.1e-13 (mkt_PM[trd])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 1.530848e-12
-Postsolved residual: 1.5308e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_DB8F.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             2.3293e+03             0.0e+00 (mkt_PA[hou])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    13     1 2.3293e+03           I 1.0e+01 1.4e+03 (mkt_PA[hou])
-
-Minor Iteration Log
-minor      t          z     w     v   art ckpts  enter    leave
-  500  2.1577e-01   282    10     0     0     9 z[    8] w[   23]
-    1     4    14     2 0.0000e+00  1.0e+00 RO 4.0e+00 0.0e+00 (prf_Y[ppd])
-
-Major Iterations. . . . 1
-Minor Iterations. . . . 584
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 14
-Gradient Evaluations. . 2
-Basis Time. . . . . . . 0.047000
-Total Time. . . . . . . 0.234000
-Residual. . . . . . . . 0.000000e+00
-
-
-----------------------------------------------
-
-Running year 2007
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_DD64.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.9901e-12           I 0.0e+00 1.1e-12 (prf_Y[slg])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.016000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 2.990130e-12
-Postsolved residual: 2.9901e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_DE7F.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             4.2268e+03             0.0e+00 (mkt_PA[hou])
-    1     1   186   293 1.6921e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.6921e+02           I 1.7e+00 1.6e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.2268e+03           R 1.0e-01 2.6e+03 (mkt_PA[hou])
-    1     1    47     4 3.5468e+02  1.0e+00 SO 4.0e-02 3.5e+02 (bal_RA)
-    2     1    48     5 1.2132e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
-    3     1    49     6 1.9330e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
-    4     1    50     7 4.8845e-06  1.0e+00 SO 1.9e-03 4.5e-06 (bal_RA)
-    5     1    51     8 1.9741e-08  1.0e+00 SO 4.9e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 66
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.546000
-Residual. . . . . . . . 1.974125e-08
+Total Time. . . . . . . 0.656000
+Residual. . . . . . . . 3.717415e-08
 
 
 ----------------------------------------------
 
-Running year 2010
+Running year 2001
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E18D.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_159D.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1342,165 +298,7 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 3.1779e-12           I 0.0e+00 1.1e-12 (mkt_PA[fbp])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 3.177906e-12
-Postsolved residual: 3.1779e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E288.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             4.5709e+03             0.0e+00 (mkt_PA[hou])
-    1     1   188   293 3.5756e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 3.5756e+02           I 3.6e+00 3.5e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.5709e+03           R 1.0e-01 2.9e+03 (mkt_PA[hou])
-    1     1    47     4 3.7342e+02  1.0e+00 SO 4.0e-02 3.7e+02 (bal_RA)
-    2     1    48     5 1.2686e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
-    3     1    49     6 2.0123e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
-    4     1    50     7 4.9836e-06  1.0e+00 SO 2.0e-03 4.4e-06 (bal_RA)
-    5     1    51     8 1.9726e-08  1.0e+00 SO 5.0e-07 1.5e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 70
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.562000
-Residual. . . . . . . . 1.972638e-08
-
-
-----------------------------------------------
-
-Running year 2003
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E586.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.1324e-12           I 0.0e+00 1.0e-12 (mkt_PA[ore])
-
-Major Iterations. . . . 0
-Minor Iterations. . . . 0
-Restarts. . . . . . . . 0
-Crash Iterations. . . . 0
-Gradient Steps. . . . . 0
-Function Evaluations. . 1
-Gradient Evaluations. . 1
-Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 2.132429e-12
-Postsolved residual: 2.1324e-12
-
-
-Shock
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E6B0.tmp
- > cumulative_iteration_limit 10000
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-
-Crash Log
-major  func  diff  size  residual    step       prox   (label)
-    0     0             3.3137e+03             0.0e+00 (mkt_PA[hou])
-    1     1   201   293 1.9000e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
-pn_search terminated: no progress.
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.9000e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
-
-Restart Log
-proximal_perturbation 0
-crash_method none
-crash_perturb yes
-nms_initial_reference_factor 2
-lemke_start_type slack
-proximal_perturbation 1.0000e-01
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 3.3137e+03           R 1.0e-01 2.0e+03 (mkt_PA[hou])
-    1     1    47     4 2.7132e+02  1.0e+00 SO 4.0e-02 2.7e+02 (bal_RA)
-    2     1    48     5 9.5541e+00  1.0e+00 SO 1.6e-02 8.9e+00 (bal_RA)
-    3     1    49     6 1.5203e-02  1.0e+00 SO 6.4e-03 1.5e-02 (bal_RA)
-    4     1    50     7 2.7178e-06  1.0e+00 SO 1.5e-03 2.4e-06 (bal_RA)
-    5     1    51     8 3.7254e-08  1.0e+00 SO 2.7e-07 2.7e-08 (bal_RA)
-
-Major Iterations. . . . 5
-Minor Iterations. . . . 69
-Restarts. . . . . . . . 1
-Crash Iterations. . . . 1
-Gradient Steps. . . . . 0
-Function Evaluations. . 51
-Gradient Evaluations. . 8
-Basis Time. . . . . . . 0.015000
-Total Time. . . . . . . 0.563000
-Residual. . . . . . . . 3.725399e-08
-
-
-----------------------------------------------
-
-Running year 2011
-
-Benchmark
-
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_E9AF.tmp
- > cumulative_iteration_limit 0
-Read of options file complete.
-
-Path 5.0.03 (Fri Jun 26 10:05:33 2020)
-Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
-Preprocessed size   : 292
-
-Major Iteration Log
-major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 2.8993e-12           I 0.0e+00 1.0e-12 (mkt_PA[che])
+    0     0     1     1 3.5351e-12           I 0.0e+00 2.0e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -1511,13 +309,13 @@ Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
 Total Time. . . . . . . 0.046000
-Residual. . . . . . . . 2.899291e-12
-Postsolved residual: 2.8993e-12
+Residual. . . . . . . . 3.535142e-12
+Postsolved residual: 3.5351e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_EAC9.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1698.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1526,13 +324,13 @@ Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
 
 Crash Log
 major  func  diff  size  residual    step       prox   (label)
-    0     0             4.7808e+03             0.0e+00 (mkt_PA[hou])
-    1     1   184   293 5.8203e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+    0     0             3.0026e+03             0.0e+00 (mkt_PA[hou])
+    1     1   203   293 1.9344e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
 pn_search terminated: no progress.
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 5.8203e+02           I 5.8e+00 5.8e+02 (mkt_PA[trn])
+    0     0    14     2 1.9344e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
 
 Restart Log
 proximal_perturbation 0
@@ -1544,32 +342,32 @@ proximal_perturbation 1.0000e-01
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 4.7808e+03           R 1.0e-01 3.0e+03 (mkt_PA[hou])
-    1     1    47     4 3.9370e+02  1.0e+00 SO 4.0e-02 3.9e+02 (bal_RA)
-    2     1    48     5 1.3260e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
-    3     1    49     6 2.0979e-02  1.0e+00 SO 6.4e-03 2.0e-02 (bal_RA)
-    4     1    50     7 5.2661e-06  1.0e+00 SO 2.1e-03 4.6e-06 (bal_RA)
-    5     1    51     8 1.3063e-08  1.0e+00 SO 5.3e-07 1.0e-08 (mkt_PFX)
+    0     0    46     3 3.0026e+03           R 1.0e-01 1.9e+03 (mkt_PA[hou])
+    1     1    47     4 2.4306e+02  1.0e+00 SO 4.0e-02 2.4e+02 (bal_RA)
+    2     1    48     5 8.6625e+00  1.0e+00 SO 1.6e-02 8.1e+00 (bal_RA)
+    3     1    49     6 1.3710e-02  1.0e+00 SO 6.4e-03 1.3e-02 (bal_RA)
+    4     1    50     7 2.4207e-06  1.0e+00 SO 1.4e-03 2.2e-06 (bal_RA)
+    5     1    51     8 3.1574e-08  1.0e+00 SO 2.4e-07 2.5e-08 (bal_RA)
 
 Major Iterations. . . . 5
-Minor Iterations. . . . 71
+Minor Iterations. . . . 69
 Restarts. . . . . . . . 1
 Crash Iterations. . . . 1
 Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.562000
-Residual. . . . . . . . 1.306300e-08
+Total Time. . . . . . . 0.625000
+Residual. . . . . . . . 3.157418e-08
 
 
 ----------------------------------------------
 
-Running year 2001
+Running year 2002
 
 Benchmark
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_EDE7.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_19F4.tmp
  > cumulative_iteration_limit 0
 Read of options file complete.
 
@@ -1579,7 +377,165 @@ Preprocessed size   : 292
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0     1     1 1.8279e-12           I 0.0e+00 1.1e-12 (mkt_PM[trd])
+    0     0     1     1 3.2850e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.078000
+Residual. . . . . . . . 3.284983e-12
+Postsolved residual: 3.2850e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_1B5C.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             3.1449e+03             0.0e+00 (mkt_PA[hou])
+    1     1   203   293 2.3843e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.3843e+02           I 2.4e+00 2.4e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 3.1449e+03           R 1.0e-01 1.9e+03 (mkt_PA[hou])
+    1     1    47     4 2.5553e+02  1.0e+00 SO 4.0e-02 2.5e+02 (bal_RA)
+    2     1    48     5 9.0656e+00  1.0e+00 SO 1.6e-02 8.5e+00 (bal_RA)
+    3     1    49     6 1.4483e-02  1.0e+00 SO 6.4e-03 1.4e-02 (bal_RA)
+    4     1    50     7 2.2734e-06  1.0e+00 SO 1.4e-03 1.9e-06 (bal_RA)
+    5     1    51     8 2.3836e-08  1.0e+00 SO 2.3e-07 1.8e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 72
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.032000
+Total Time. . . . . . . 1.063000
+Residual. . . . . . . . 2.383631e-08
+
+
+----------------------------------------------
+
+Running year 2003
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_204F.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 3.9858e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.062000
+Residual. . . . . . . . 3.985824e-12
+Postsolved residual: 3.9858e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2169.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             3.3133e+03             0.0e+00 (mkt_PA[hou])
+    1     1   201   293 1.8970e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.8970e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 3.3133e+03           R 1.0e-01 2.0e+03 (mkt_PA[hou])
+    1     1    47     4 2.7184e+02  1.0e+00 SO 4.0e-02 2.7e+02 (bal_RA)
+    2     1    48     5 9.5689e+00  1.0e+00 SO 1.6e-02 9.0e+00 (bal_RA)
+    3     1    49     6 1.5218e-02  1.0e+00 SO 6.4e-03 1.5e-02 (bal_RA)
+    4     1    50     7 2.7229e-06  1.0e+00 SO 1.5e-03 2.4e-06 (bal_RA)
+    5     1    51     8 3.1633e-08  1.0e+00 SO 2.7e-07 2.5e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 69
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.015000
+Total Time. . . . . . . 0.594000
+Residual. . . . . . . . 3.163336e-08
+
+
+----------------------------------------------
+
+Running year 2004
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2487.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 3.9829e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
 
 Major Iterations. . . . 0
 Minor Iterations. . . . 0
@@ -1590,13 +546,13 @@ Function Evaluations. . 1
 Gradient Evaluations. . 1
 Basis Time. . . . . . . 0.000000
 Total Time. . . . . . . 0.047000
-Residual. . . . . . . . 1.827937e-12
-Postsolved residual: 1.8279e-12
+Residual. . . . . . . . 3.982923e-12
+Postsolved residual: 3.9829e-12
 
 
 Shock
 
-Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_EEE2.tmp
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2592.tmp
  > cumulative_iteration_limit 10000
 Read of options file complete.
 
@@ -1605,13 +561,13 @@ Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
 
 Crash Log
 major  func  diff  size  residual    step       prox   (label)
-    0     0             3.0014e+03             0.0e+00 (mkt_PA[hou])
-    1     1   203   293 1.9364e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+    0     0             3.5266e+03             0.0e+00 (mkt_PA[hou])
+    1     1   194   293 1.7390e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
 pn_search terminated: no progress.
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    14     2 1.9364e+02           I 1.9e+00 1.9e+02 (mkt_PA[trn])
+    0     0    14     2 1.7390e+02           I 1.7e+00 1.7e+02 (mkt_PA[trn])
 
 Restart Log
 proximal_perturbation 0
@@ -1623,12 +579,960 @@ proximal_perturbation 1.0000e-01
 
 Major Iteration Log
 major minor  func  grad  residual    step  type prox    inorm  (label)
-    0     0    46     3 3.0014e+03           R 1.0e-01 1.9e+03 (mkt_PA[hou])
-    1     1    47     4 2.4281e+02  1.0e+00 SO 4.0e-02 2.4e+02 (bal_RA)
-    2     1    48     5 8.6546e+00  1.0e+00 SO 1.6e-02 8.1e+00 (bal_RA)
-    3     1    49     6 1.3702e-02  1.0e+00 SO 6.4e-03 1.3e-02 (bal_RA)
-    4     1    50     7 2.4179e-06  1.0e+00 SO 1.4e-03 2.2e-06 (bal_RA)
-    5     1    51     8 3.6811e-08  1.0e+00 SO 2.4e-07 2.6e-08 (bal_RA)
+    0     0    46     3 3.5266e+03           R 1.0e-01 2.2e+03 (mkt_PA[hou])
+    1     1    47     4 2.9237e+02  1.0e+00 SO 4.0e-02 2.9e+02 (bal_RA)
+    2     1    48     5 1.0188e+01  1.0e+00 SO 1.6e-02 9.5e+00 (bal_RA)
+    3     1    49     6 1.6177e-02  1.0e+00 SO 6.4e-03 1.6e-02 (bal_RA)
+    4     1    50     7 3.2059e-06  1.0e+00 SO 1.6e-03 2.9e-06 (bal_RA)
+    5     1    51     8 3.1920e-08  1.0e+00 SO 3.2e-07 2.5e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 71
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.046000
+Total Time. . . . . . . 0.578000
+Residual. . . . . . . . 3.191990e-08
+
+
+----------------------------------------------
+
+Running year 2005
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_28A0.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 4.6708e-12           I 0.0e+00 2.0e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 4.670756e-12
+Postsolved residual: 4.6708e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_299B.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             3.7774e+03             0.0e+00 (mkt_PA[hou])
+    1     1   191   293 1.6726e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.6726e+02           I 1.7e+00 1.7e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 3.7774e+03           R 1.0e-01 2.3e+03 (mkt_PA[hou])
+    1     1    47     4 3.1488e+02  1.0e+00 SO 4.0e-02 3.1e+02 (bal_RA)
+    2     1    48     5 1.0914e+01  1.0e+00 SO 1.6e-02 1.0e+01 (bal_RA)
+    3     1    49     6 1.7504e-02  1.0e+00 SO 6.4e-03 1.7e-02 (bal_RA)
+    4     1    50     7 3.8597e-06  1.0e+00 SO 1.8e-03 3.5e-06 (bal_RA)
+    5     1    51     8 2.5432e-08  1.0e+00 SO 3.9e-07 1.9e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 72
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.594000
+Residual. . . . . . . . 2.543207e-08
+
+
+----------------------------------------------
+
+Running year 2006
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2CB9.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 4.8921e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 4.892114e-12
+Postsolved residual: 4.8921e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_2DC3.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.0034e+03             0.0e+00 (mkt_PA[hou])
+    1     1   187   293 1.7725e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.7725e+02           I 1.8e+00 1.7e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.0034e+03           R 1.0e-01 2.5e+03 (mkt_PA[hou])
+    1     1    47     4 3.3546e+02  1.0e+00 SO 4.0e-02 3.3e+02 (bal_RA)
+    2     1    48     5 1.1525e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
+    3     1    49     6 1.8449e-02  1.0e+00 SO 6.4e-03 1.8e-02 (bal_RA)
+    4     1    50     7 4.4165e-06  1.0e+00 SO 1.8e-03 4.0e-06 (bal_RA)
+    5     1    51     8 2.5883e-08  1.0e+00 SO 4.4e-07 1.9e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 78
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.594000
+Residual. . . . . . . . 2.588253e-08
+
+
+----------------------------------------------
+
+Running year 2007
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_30E1.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.1916e-12           I 0.0e+00 1.9e-12 (mkt_PA[hou])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.032000
+Residual. . . . . . . . 5.191638e-12
+Postsolved residual: 5.1916e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_31CD.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.2337e+03             0.0e+00 (mkt_PA[hou])
+    1     1   186   293 1.6900e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.6900e+02           I 1.7e+00 1.6e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.2337e+03           R 1.0e-01 2.7e+03 (mkt_PA[hou])
+    1     1    47     4 3.5593e+02  1.0e+00 SO 4.0e-02 3.5e+02 (bal_RA)
+    2     1    48     5 1.2187e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
+    3     1    49     6 1.9464e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
+    4     1    50     7 4.9571e-06  1.0e+00 SO 1.9e-03 4.5e-06 (bal_RA)
+    5     1    51     8 2.4339e-08  1.0e+00 SO 5.0e-07 1.8e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 66
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.609000
+Residual. . . . . . . . 2.433869e-08
+
+
+----------------------------------------------
+
+Running year 2008
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_34FA.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 4.9131e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.031000
+Residual. . . . . . . . 4.913055e-12
+Postsolved residual: 4.9131e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_35E6.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.4492e+03             0.0e+00 (mkt_PA[hou])
+    1     1   187   293 2.7079e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.7079e+02           I 2.7e+00 2.7e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.4492e+03           R 1.0e-01 2.8e+03 (mkt_PA[hou])
+    1     1    47     4 3.6845e+02  1.0e+00 SO 4.0e-02 3.6e+02 (bal_RA)
+    2     1    48     5 1.2581e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
+    3     1    49     6 1.9926e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
+    4     1    50     7 5.0879e-06  1.0e+00 SO 2.0e-03 4.6e-06 (bal_RA)
+    5     1    51     8 2.4379e-08  1.0e+00 SO 5.1e-07 1.8e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 67
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.578000
+Residual. . . . . . . . 2.437905e-08
+
+
+----------------------------------------------
+
+Running year 2009
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3903.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.0151e-12           I 0.0e+00 3.0e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.063000
+Residual. . . . . . . . 5.015132e-12
+Postsolved residual: 5.0151e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3A0E.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.4582e+03             0.0e+00 (mkt_PA[hou])
+    1     1   191   293 2.1998e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.1998e+02           I 2.2e+00 2.2e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.4582e+03           R 1.0e-01 2.9e+03 (mkt_PA[hou])
+    1     1    47     4 3.5834e+02  1.0e+00 SO 4.0e-02 3.6e+02 (bal_RA)
+    2     1    48     5 1.2288e+01  1.0e+00 SO 1.6e-02 1.1e+01 (bal_RA)
+    3     1    49     6 1.9403e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
+    4     1    50     7 4.3893e-06  1.0e+00 SO 1.9e-03 3.8e-06 (bal_RA)
+    5     1    51     8 3.7814e-08  1.0e+00 SO 4.4e-07 2.7e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 68
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.015000
+Total Time. . . . . . . 0.641000
+Residual. . . . . . . . 3.781399e-08
+
+
+----------------------------------------------
+
+Running year 2010
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3D6A.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 4.7001e-12           I 0.0e+00 1.8e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 4.700143e-12
+Postsolved residual: 4.7001e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_3E75.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.6281e+03             0.0e+00 (mkt_PA[hou])
+    1     1   189   293 3.5683e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 3.5683e+02           I 3.6e+00 3.5e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.6281e+03           R 1.0e-01 3.0e+03 (mkt_PA[hou])
+    1     1    47     4 3.7601e+02  1.0e+00 SO 4.0e-02 3.7e+02 (bal_RA)
+    2     1    48     5 1.2800e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
+    3     1    49     6 2.0281e-02  1.0e+00 SO 6.4e-03 1.9e-02 (bal_RA)
+    4     1    50     7 5.0459e-06  1.0e+00 SO 2.0e-03 4.5e-06 (bal_RA)
+    5     1    51     8 3.1403e-08  1.0e+00 SO 5.0e-07 2.5e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 70
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.641000
+Residual. . . . . . . . 3.140285e-08
+
+
+----------------------------------------------
+
+Running year 2011
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_41C2.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.2972e-12           I 0.0e+00 2.7e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.032000
+Residual. . . . . . . . 5.297161e-12
+Postsolved residual: 5.2972e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_42BD.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.8185e+03             0.0e+00 (mkt_PA[hou])
+    1     1   183   293 5.8492e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 5.8492e+02           I 5.8e+00 5.8e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.8185e+03           R 1.0e-01 3.0e+03 (mkt_PA[hou])
+    1     1    47     4 3.9569e+02  1.0e+00 SO 4.0e-02 3.9e+02 (bal_RA)
+    2     1    48     5 1.3344e+01  1.0e+00 SO 1.6e-02 1.2e+01 (bal_RA)
+    3     1    49     6 2.1099e-02  1.0e+00 SO 6.4e-03 2.0e-02 (bal_RA)
+    4     1    50     7 5.3365e-06  1.0e+00 SO 2.1e-03 4.6e-06 (bal_RA)
+    5     1    51     8 2.4198e-08  1.0e+00 SO 5.3e-07 1.8e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 70
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.625000
+Residual. . . . . . . . 2.419751e-08
+
+
+----------------------------------------------
+
+Running year 2012
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_460A.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.0805e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.046000
+Residual. . . . . . . . 5.080497e-12
+Postsolved residual: 5.0805e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_46F5.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             4.9739e+03             0.0e+00 (mkt_PA[hou])
+    1     1   178   293 8.8838e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 8.8838e+02           I 8.9e+00 8.9e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 4.9739e+03           R 1.0e-01 3.1e+03 (mkt_PA[hou])
+    1     1    47     4 4.0950e+02  1.0e+00 SO 4.0e-02 4.1e+02 (bal_RA)
+    2     1    48     5 1.3722e+01  1.0e+00 SO 1.6e-02 1.3e+01 (bal_RA)
+    3     1    49     6 2.1786e-02  1.0e+00 SO 6.4e-03 2.1e-02 (bal_RA)
+    4     1    50     7 5.3706e-06  1.0e+00 SO 2.2e-03 4.2e-06 (bal_RA)
+    5     1    51     8 2.4018e-08  1.0e+00 SO 5.4e-07 1.8e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 70
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.015000
+Total Time. . . . . . . 0.625000
+Residual. . . . . . . . 2.401778e-08
+
+
+----------------------------------------------
+
+Running year 2013
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4A32.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 4.7661e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 4.766102e-12
+Postsolved residual: 4.7661e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4B2D.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.1259e+03             0.0e+00 (mkt_PA[hou])
+    1     1   177   293 1.2283e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.2283e+03           I 9.0e+00 1.2e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 5.1259e+03           R 1.0e-01 3.2e+03 (mkt_PA[hou])
+    1     1    47     4 4.2329e+02  1.0e+00 SO 4.0e-02 4.2e+02 (bal_RA)
+    2     1    48     5 1.4100e+01  1.0e+00 SO 1.6e-02 1.3e+01 (bal_RA)
+    3     1    49     6 2.2348e-02  1.0e+00 SO 6.4e-03 2.1e-02 (bal_RA)
+    4     1    50     7 6.1985e-06  1.0e+00 SO 2.2e-03 5.5e-06 (bal_RA)
+    5     1    51     8 2.3038e-08  1.0e+00 SO 6.2e-07 1.7e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 68
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.640000
+Residual. . . . . . . . 2.303838e-08
+
+
+----------------------------------------------
+
+Running year 2014
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4E99.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.5220e-12           I 0.0e+00 1.6e-12 (mkt_PA[tsv])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.078000
+Residual. . . . . . . . 5.522038e-12
+Postsolved residual: 5.5220e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_4F94.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.3353e+03             0.0e+00 (mkt_PA[hou])
+    1     1   174   293 2.2767e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.2767e+03           I 9.0e+00 2.3e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 5.3353e+03           R 1.0e-01 3.3e+03 (mkt_PA[hou])
+    1     1    47     4 4.4315e+02  1.0e+00 SO 4.0e-02 4.4e+02 (bal_RA)
+    2     1    48     5 1.4690e+01  1.0e+00 SO 1.6e-02 1.4e+01 (bal_RA)
+    3     1    49     6 2.3216e-02  1.0e+00 SO 6.4e-03 2.2e-02 (bal_RA)
+    4     1    50     7 6.9036e-06  1.0e+00 SO 2.3e-03 6.2e-06 (bal_RA)
+    5     1    51     8 2.2435e-08  1.0e+00 SO 6.9e-07 1.7e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 68
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.656000
+Residual. . . . . . . . 2.243532e-08
+
+
+----------------------------------------------
+
+Running year 2015
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_52F0.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.1859e-12           I 0.0e+00 1.8e-12 (mkt_PA[fbp])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 5.185941e-12
+Postsolved residual: 5.1859e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_53FB.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.5402e+03             0.0e+00 (mkt_PA[hou])
+    1     1   177   293 1.1900e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.1900e+03           I 9.0e+00 1.2e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 5.5402e+03           R 1.0e-01 3.5e+03 (mkt_PA[hou])
+    1     1    47     4 4.5944e+02  1.0e+00 SO 4.0e-02 4.6e+02 (bal_RA)
+    2     1    48     5 1.5191e+01  1.0e+00 SO 1.6e-02 1.4e+01 (bal_RA)
+    3     1    49     6 2.3973e-02  1.0e+00 SO 6.4e-03 2.3e-02 (bal_RA)
+    4     1    50     7 7.3153e-06  1.0e+00 SO 2.4e-03 6.6e-06 (bal_RA)
+    5     1    51     8 2.1922e-08  1.0e+00 SO 7.3e-07 1.6e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 67
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.672000
+Residual. . . . . . . . 2.192213e-08
+
+
+----------------------------------------------
+
+Running year 2016
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5757.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.0921e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.078000
+Residual. . . . . . . . 5.092148e-12
+Postsolved residual: 5.0921e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5872.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             5.7597e+03             0.0e+00 (mkt_PA[hou])
+    1     1   178   293 8.3376e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 8.3376e+02           I 8.3e+00 8.1e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 5.7597e+03           R 1.0e-01 3.6e+03 (mkt_PA[hou])
+    1     1    47     4 4.7610e+02  1.0e+00 SO 4.0e-02 4.7e+02 (bal_RA)
+    2     1    48     5 1.5761e+01  1.0e+00 SO 1.6e-02 1.5e+01 (bal_RA)
+    3     1    49     6 2.4896e-02  1.0e+00 SO 6.4e-03 2.4e-02 (bal_RA)
+    4     1    50     7 7.6637e-06  1.0e+00 SO 2.5e-03 6.9e-06 (bal_RA)
+    5     1    51     8 3.3366e-08  1.0e+00 SO 7.7e-07 2.3e-08 (mkt_PFX)
 
 Major Iterations. . . . 5
 Minor Iterations. . . . 69
@@ -1638,8 +1542,324 @@ Gradient Steps. . . . . 0
 Function Evaluations. . 51
 Gradient Evaluations. . 8
 Basis Time. . . . . . . 0.000000
-Total Time. . . . . . . 0.578000
-Residual. . . . . . . . 3.681133e-08
+Total Time. . . . . . . 0.735000
+Residual. . . . . . . . 3.336560e-08
+
+
+----------------------------------------------
+
+Running year 2017
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5C2C.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.5594e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.032000
+Residual. . . . . . . . 5.559447e-12
+Postsolved residual: 5.5594e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_5D17.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             6.0018e+03             0.0e+00 (mkt_PA[hou])
+    1     1   175   293 1.2039e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 1.2039e+03           I 9.0e+00 1.2e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 6.0018e+03           R 1.0e-01 3.8e+03 (mkt_PA[hou])
+    1     1    47     4 4.9757e+02  1.0e+00 SO 4.0e-02 4.9e+02 (bal_RA)
+    2     1    48     5 1.6387e+01  1.0e+00 SO 1.6e-02 1.5e+01 (bal_RA)
+    3     1    49     6 2.5774e-02  1.0e+00 SO 6.4e-03 2.5e-02 (bal_RA)
+    4     1    50     7 8.4587e-06  1.0e+00 SO 2.6e-03 7.7e-06 (bal_RA)
+    5     1    51     8 2.1643e-08  1.0e+00 SO 8.5e-07 1.6e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 68
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.719000
+Residual. . . . . . . . 2.164264e-08
+
+
+----------------------------------------------
+
+Running year 2018
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_60D1.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 5.7606e-12           I 0.0e+00 2.7e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.032000
+Residual. . . . . . . . 5.760624e-12
+Postsolved residual: 5.7606e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_61BD.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             6.2976e+03             0.0e+00 (mkt_PA[hou])
+    1     1   169   293 2.1632e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.1632e+03           I 9.0e+00 2.1e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 6.2976e+03           R 1.0e-01 3.9e+03 (mkt_PA[hou])
+    1     1    47     4 5.2552e+02  1.0e+00 SO 4.0e-02 5.2e+02 (bal_RA)
+    2     1    48     5 1.7246e+01  1.0e+00 SO 1.6e-02 1.6e+01 (bal_RA)
+    3     1    49     6 2.7136e-02  1.0e+00 SO 6.4e-03 2.6e-02 (bal_RA)
+    4     1    50     7 9.2806e-06  1.0e+00 SO 2.6e-03 8.6e-06 (bal_RA)
+    5     1    51     8 2.6634e-08  1.0e+00 SO 9.3e-07 2.1e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 66
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.016000
+Total Time. . . . . . . 0.640000
+Residual. . . . . . . . 2.663388e-08
+
+
+----------------------------------------------
+
+Running year 2019
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6519.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 6.0606e-12           I 0.0e+00 2.3e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.031000
+Residual. . . . . . . . 6.060615e-12
+Postsolved residual: 6.0606e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6604.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             6.5669e+03             0.0e+00 (mkt_PA[hou])
+    1     1   166   293 2.5241e+03  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 2.5241e+03           I 9.0e+00 2.0e+03 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 6.5669e+03           R 1.0e-01 4.1e+03 (mkt_PA[hou])
+    1     1    47     4 5.4562e+02  1.0e+00 SO 4.0e-02 5.4e+02 (bal_RA)
+    2     1    48     5 1.7934e+01  1.0e+00 SO 1.6e-02 1.7e+01 (bal_RA)
+    3     1    49     6 2.8303e-02  1.0e+00 SO 6.4e-03 2.7e-02 (bal_RA)
+    4     1    50     7 9.7863e-06  1.0e+00 SO 2.6e-03 9.1e-06 (bal_RA)
+    5     1    51     8 1.7613e-08  1.0e+00 SO 9.8e-07 1.3e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 68
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.047000
+Total Time. . . . . . . 0.735000
+Residual. . . . . . . . 1.761288e-08
+
+
+----------------------------------------------
+
+Running year 2020
+
+Benchmark
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6990.tmp
+ > cumulative_iteration_limit 0
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+Preprocessed size   : 292
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0     1     1 6.4401e-12           I 0.0e+00 3.2e-12 (mkt_PM[trd])
+
+Major Iterations. . . . 0
+Minor Iterations. . . . 0
+Restarts. . . . . . . . 0
+Crash Iterations. . . . 0
+Gradient Steps. . . . . 0
+Function Evaluations. . 1
+Gradient Evaluations. . 1
+Basis Time. . . . . . . 0.000000
+Total Time. . . . . . . 0.047000
+Residual. . . . . . . . 6.440074e-12
+Postsolved residual: 6.4401e-12
+
+
+Shock
+
+Reading options file C:\Users\MPHILL~1\AppData\Local\Temp\jl_6A8B.tmp
+ > cumulative_iteration_limit 10000
+Read of options file complete.
+
+Path 5.0.03 (Fri Jun 26 10:05:33 2020)
+Written by Todd Munson, Steven Dirkse, Youngdae Kim, and Michael Ferris
+
+Crash Log
+major  func  diff  size  residual    step       prox   (label)
+    0     0             6.5647e+03             0.0e+00 (mkt_PA[hou])
+    1     1   189   293 3.5371e+02  1.0e+00    1.0e+01 (mkt_PA[trn])
+pn_search terminated: no progress.
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    14     2 3.5371e+02           I 3.5e+00 3.5e+02 (mkt_PA[trn])
+
+Restart Log
+proximal_perturbation 0
+crash_method none
+crash_perturb yes
+nms_initial_reference_factor 2
+lemke_start_type slack
+proximal_perturbation 1.0000e-01
+
+Major Iteration Log
+major minor  func  grad  residual    step  type prox    inorm  (label)
+    0     0    46     3 6.5647e+03           R 1.0e-01 4.3e+03 (mkt_PA[hou])
+    1     1    47     4 5.2781e+02  1.0e+00 SO 4.0e-02 5.2e+02 (bal_RA)
+    2     1    48     5 1.6762e+01  1.0e+00 SO 1.6e-02 1.5e+01 (bal_RA)
+    3     1    49     6 2.5827e-02  1.0e+00 SO 6.4e-03 2.5e-02 (bal_RA)
+    4     1    50     7 9.1025e-06  1.0e+00 SO 2.6e-03 8.5e-06 (bal_RA)
+    5     1    51     8 1.7728e-08  1.0e+00 SO 9.1e-07 1.3e-08 (bal_RA)
+
+Major Iterations. . . . 5
+Minor Iterations. . . . 74
+Restarts. . . . . . . . 1
+Crash Iterations. . . . 1
+Gradient Steps. . . . . 0
+Function Evaluations. . 51
+Gradient Evaluations. . 8
+Basis Time. . . . . . . 0.031000
+Total Time. . . . . . . 0.906000
+Residual. . . . . . . . 1.772849e-08
 
 
 ----------------------------------------------

@@ -44,7 +44,7 @@ function national_model(;solver_output = "nationalmodel.txt",input_dir = "data/n
 
         GU[:ty][J] = GU[:ty0][J]
         
-        GU[:bopdef] = sum(GU[:m0][[i]]-GU[:x0][[i]] for i ∈GU[:i])
+        GU[:bopdef][] = sum(GU[:m0][[i]]-GU[:x0][[i]] for i ∈GU[:i])
 
         GU[:ta0][I] = GU[:ta_0][[yr],I]
         GU[:tm0][I] = GU[:tm_0][[yr],I]
@@ -102,7 +102,7 @@ function national_model_prepare!(GU)
     alias(GU,:fd,:xfd)
     
     
-    @GamsParameters(GU,begin
+    @create_parameters(GU,begin
     :y0  ,     (:i,),       "Gross output"
     :ys0 ,     (:j, :i),    "Sectoral supply"
     :ty0 ,     (:j,),       "Output tax rate"
@@ -123,7 +123,7 @@ function national_model_prepare!(GU)
     :s0 ,      (:i,),        "Aggregate supply"
     #:d0,      (:i,),	    "Sales in the domestic market"
     :a0 ,      (:i,),       "Armington supply"
-    #:bopdef , (,),         "Balance of payments deficit"
+    :bopdef , (),         "Balance of payments deficit"
     :ta0 ,     (:i,),       "Tax net subsidy rate on intermediate demand"
     :tm0 ,     (:i,),       "Import tariff"
     
@@ -137,9 +137,9 @@ function national_model_prepare!(GU)
     :thetac ,  (:i,),       "Benchmark value shares"
     end)
     
-    @GamsScalars(GU,begin
-        :bopdef, 0
-    end);
+    #@GamsScalars(GU,begin
+    #    :bopdef, 0
+    #end);
     
     return GU
 end
@@ -194,7 +194,7 @@ function national_model_mcp(GU)
 
     ty = GU[:ty]
     ms0 = GU[:ms0]
-    bopdef = scalar(GU[:bopdef])
+    bopdef = GU[:bopdef][]
     fs0 = GU[:fs0]
     ys0 = GU[:ys0]
     id0 = GU[:id0]
@@ -358,12 +358,11 @@ function national_model_mpsge(GU)
     m = MPSGE.Model()
 
     ctrl = Dict()
-    @GamsParameters(ctrl,GU,begin
+    @create_parameters(GU,begin
         :y_ , (:j,),    "Sectors with positive production"
         :a_ , (:i,),    "Sectors with absorption"
         :py_ , (:i,),   "Goods with positive supply"
         :xfd , (:fd,),  "Exogenous components of final demand"
-    
     end)
 
 
@@ -445,7 +444,7 @@ function national_model_mpsge(GU)
         [Demand(PA[i],GU[:fd0][i,:pce]) for i ∈ a0_ind],
         [ 
             [Endowment(PY[i],GU[:fs0][i]) for i ∈ py_ind];
-            [Endowment(PFX,GU[:bopdef])];
+            [Endowment(PFX,GU[:bopdef][])];
             [Endowment(PA[i] ,-sum(GU[:fd0][i,xfd] for xfd ∈ GU[:fd])) for i∈a0_ind]; #should be xfd, not fd
             [Endowment(PVA[va],sum(GU[:va0][va,j ] for j  ∈ GU[:j] )) for va∈GU[:va]]
         ]
