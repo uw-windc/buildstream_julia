@@ -82,7 +82,7 @@ function calibrate_prepare!(GU)
     alias(GU,:fd,:othfd)
     GU[:othfd][:pce].active = false
 
-    @GamsSet(GU,:pce,"PCE category of fd",begin
+    @create_set!(GU,:pce,"PCE category of fd",begin
         pce,""
     end);
 
@@ -90,7 +90,7 @@ function calibrate_prepare!(GU)
     ###################
     ## Parameters ##
     ################
-    @GamsParameters(GU,begin
+    @create_parameters(GU,begin
         :ty_values, (:yr,:j), "Output tax values"
     end)
 
@@ -100,7 +100,7 @@ function calibrate_prepare!(GU)
 
 
 
-    @GamsParameters(GU,begin
+    @create_parameters(GU,begin
     :y0,	(:i,),	"Gross output"
     :ty0,	(:j,),	"Output tax rate (OTHTAX)"
     :ty_0,  (:yr,:j), "Output tax rate"
@@ -158,7 +158,7 @@ function calibrate_prepare!(GU)
     
     #GU[:duty_0][:yr,:i] = GU[:m_0][:yr,:i]==0 ?  0 : GU[:duty_0][:yr,:i]
 
-    @GamsParameters(GU,begin
+    @create_parameters(GU,begin
         :m_shr, (:i,), "Average shares of imports"
         :va_shr, (:j,:va), "average shares of GDP"
     end)
@@ -365,12 +365,12 @@ end
 function calibrate_zero_profit(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         Y,""
         A,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :profit, (:yr,:j,:tmp), " Zero profit condidtions"
     end)
 
@@ -400,12 +400,12 @@ end
 function calibrate_market_clearance(GU::GamsUniverse)
     G = deepcopy(GU)
 
-    @GamsSet(G,:tmp,"tmp",begin
+    @create_set!(G,:tmp,"tmp",begin
         PA,""
         PY,""
     end)
 
-    @GamsParameters(G,begin
+    @create_parameters(G,begin
         :market, (:yr,:i,:tmp), "Market clearance condition"
     end)
 
